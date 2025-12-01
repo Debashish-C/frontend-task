@@ -3,8 +3,8 @@ import { Platform } from 'react-native';
 
 // Use different API URLs for web vs mobile
 const API_URL = Platform.OS === 'web'
-  ? (process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8000')
-  : (process.env.EXPO_PUBLIC_API_URL || 'http://192.168.232.7:8003');
+  ? (process.env.EXPO_PUBLIC_API_URL || 'http://localhost:8001')
+  : (process.env.EXPO_PUBLIC_API_URL || 'http://192.168.232.7:8001');
 
 class ApiService {
   private getToken = async (): Promise<string | null> => {
